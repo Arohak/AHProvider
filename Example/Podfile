@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AHProvider_Example' do
+  pod 'AHProvider', :path => '../'
+
+  target 'AHProvider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
