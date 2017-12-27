@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		0A936187C0DD9FF61CB1276E /* Pods-AHProvider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHProvider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHProvider_Example/Pods-AHProvider_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1C41BC7F87347C5654B84C97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		236C9B0845C71A229C9D11B4 /* AHProvider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AHProvider.podspec; path = ../AHProvider.podspec; sourceTree = "<group>"; };
+		1C41BC7F87347C5654B84C97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		236C9B0845C71A229C9D11B4 /* AHProvider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHProvider.podspec; path = ../AHProvider.podspec; sourceTree = "<group>"; };
 		23D0D96D29EABB66A142D18B /* Pods-AHProvider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHProvider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHProvider_Example/Pods-AHProvider_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2DBD3FEF4BB0E53BB15DF00F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2DBD3FEF4BB0E53BB15DF00F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		33C4D7FA1AFF96C216E7ADC4 /* Pods_AHProvider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHProvider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* AHProvider_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHProvider_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -560,6 +560,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHProvider_Example.app/AHProvider_Example";
 			};
 			name = Debug;
 		};
@@ -577,6 +578,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHProvider_Example.app/AHProvider_Example";
 			};
 			name = Release;
 		};
