@@ -33,7 +33,7 @@ AHProvider library to make API requests.
   s.source_files = 'AHProvider/Classes/**/*'
 
   s.frameworks      = 'Foundation'
-  s.source_files    = 'LTRunLoop/**/*.{h,m}'
+  s.source_files    = 'AHProvider/**/*.{h,m}'
 
   # s.resource_bundles = {
   #   'AHProvider' => ['AHProvider/Assets/*.png']
