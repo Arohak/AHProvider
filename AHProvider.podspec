@@ -31,7 +31,9 @@ AHProvider library to make API requests.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AHProvider/Classes/**/*'
-  
+
+  s.frameworks = 'Foundation'
+
   # s.resource_bundles = {
   #   'AHProvider' => ['AHProvider/Assets/*.png']
   # }
