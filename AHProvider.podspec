@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AHProvider'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'AHProvider library to make API requests.'
 
   s.homepage         = 'https://github.com/Arohak/AHProvider'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Arohak' => 'aro.hak.25@gmail.com' }
-  s.source           = { :git => 'https://github.com/Arohak/AHProvider.git', :tag => '0.1.0' }
+  s.source           = { :git => 'https://github.com/Arohak/AHProvider.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'AHProvider/Classes/**/*'
