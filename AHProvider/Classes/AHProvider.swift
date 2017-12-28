@@ -12,7 +12,7 @@ protocol AHProviderType: class {
 
 open class AHProvider<Request: AHRequest>: AHProviderType {
     
-    private let session: URLSession
+    fileprivate let session: URLSession
     
     public init() {
         self.session = URLSession(configuration: .default)
