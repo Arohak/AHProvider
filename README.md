@@ -17,7 +17,7 @@ AHProvider is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AHProvider'
+pod 'AHProvider', '~> 0.1.0'
 ```
 
 ## Author
