@@ -21,10 +21,19 @@ class ViewController: UIViewController {
     let provider = AHProvider<TestAPI>()
     
     func useLetsbuild() {
-        provider.request(.letsbuild) { (response: AHResult<User>) in
+        provider.requestDecodable(.letsbuild) { (response: AHResult<User>) in
             switch response {
             case .failure(let error):
-                print(error.localizedDescription)
+                print(error)
+            case .success(let result):
+                print(result)
+            }
+        }
+
+        provider.request(.letsbuild) { (response: AHResult<[String: Any]>) in
+            switch response {
+            case .failure(let error):
+                print(error)
             case .success(let result):
                 print(result)
             }
@@ -32,10 +41,10 @@ class ViewController: UIViewController {
     }
     
     func useGuardian() {
-        provider.request(.guardian(pageSize: "2")) { (response: AHResult<Data>) in
+        provider.requestDecodable(.guardian(pageSize: "2")) { (response: AHResult<NewsFeed>) in
             switch response {
             case .failure(let error):
-                print(error.localizedDescription)
+                print(error)
             case .success(let result):
                 print(result)
             }

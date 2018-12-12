@@ -1,16 +1,16 @@
 PODS:
-  - AHProvider (0.1.0)
+  - AHProvider (0.0.1)
 
 DEPENDENCIES:
   - AHProvider (from `../`)
 
 EXTERNAL SOURCES:
   AHProvider:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AHProvider: 24829c5b5b1516513502fd24e6f29ec61cf139cc
+  AHProvider: 16cbdb755a0f421042ce4d5c5af89233cf2d40be
 
 PODFILE CHECKSUM: 69b54bbb23320d48f9c907314b330e359de86571
 
-COCOAPODS: 1.4.0.beta.1
+COCOAPODS: 1.5.3

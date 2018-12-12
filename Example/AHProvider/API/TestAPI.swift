@@ -8,7 +8,6 @@ enum TestAPI {
 }
 
 extension TestAPI: AHRequest {
-    
     var method: AHHttpMethod {
         switch self {
         case .guardian, .letsbuild:
