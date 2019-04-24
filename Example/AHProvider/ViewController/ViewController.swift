@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     let provider = AHProvider<TestAPI>()
     
     func useLetsbuild() {
-        provider.requestDecodable(.letsbuild) { (response: AHResult<User>) in
+        provider.requestDecodable(.letsbuild) { (response: Result<User, AHError>) in
             switch response {
             case .failure(let error):
                 print(error)
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             }
         }
 
-        provider.request(.letsbuild) { (response: AHResult<[String: Any]>) in
+        provider.request(.letsbuild) { response in
             switch response {
             case .failure(let error):
                 print(error)
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     }
     
     func useGuardian() {
-        provider.requestDecodable(.guardian(pageSize: "2")) { (response: AHResult<NewsFeed>) in
+        provider.requestDecodable(.guardian(pageSize: "2")) { (response: Result<NewsFeed, AHError>) in
             switch response {
             case .failure(let error):
                 print(error)

@@ -13,11 +13,6 @@ public protocol AHRequest {
     var headers: [String: String]? { get }
 }
 
-public enum AHResult<Response> {
-    case success(Response)
-    case failure(Error)
-}
-
 public enum AHHttpMethod : String {
     case get, post, put, patch, delete
     
@@ -27,6 +22,7 @@ public enum AHHttpMethod : String {
 }
 
 public enum AHError: Error {
+    case badURL(Error)
     case invalidUrl
     case dataMissing
     case invalidJsonResponse

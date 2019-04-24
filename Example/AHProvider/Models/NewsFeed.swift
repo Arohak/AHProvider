@@ -15,7 +15,7 @@ struct NewsFeed: Decodable {
 struct Response: Decodable {
     let page: Int
     let status: String
-    let results: [Result]
+    let results: [Rezult]
     
     public enum CodingKeys: String, CodingKey {
         case page = "pageSize"
@@ -24,7 +24,7 @@ struct Response: Decodable {
     }
 }
 
-struct Result: Decodable {
+struct Rezult: Decodable {
     let pillarName: String
     let sectionName: String
 }
